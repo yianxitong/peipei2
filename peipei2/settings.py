@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'peipei2.wsgi.application'
 DATABASES={
 'default':{
 'ENGINE':'django.db.backends.mysql',
-'NAME':'peipei2',
+'NAME':'peipei3',
 'USER':"root",
 'PASSWORD':'2996Vaee',
 'HOST':'localhost',

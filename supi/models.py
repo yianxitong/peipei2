@@ -9,11 +9,11 @@ class zhuanye(models.Model):
 
 class student(models.Model):
     sname = models.CharField(max_length=20,db_index=True)
-    sid = models.IntegerField(db_index=True)
-    szhuanye= models.ForeignKey("zhuanye",on_delete=models.CASCADE)
-
+    sid = models.IntegerField(null=False,primary_key=True,default="0")
+    szhuanye= models.ForeignKey('zhuanye',on_delete=models.CASCADE,null=True)
+    xuexiao = models.CharField(max_length=15, null=True)
     isDelete = models.BooleanField(default=False)
-    ordering=['sid']
+
 
 
 
