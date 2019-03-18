@@ -26,6 +26,6 @@ class Student(models.Model):
     class Meta:
         db_table="students"
         ordering=['sid']
-
+ 
 
 # Create your models here.
